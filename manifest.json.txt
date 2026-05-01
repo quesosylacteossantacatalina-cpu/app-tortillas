@@ -1,0 +1,16 @@
+{
+  "name": "Las Mejores Tortillas",
+  "short_name": "Tortillas",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#27ae60",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghamwcVVX1zE1m37GyEg9CiUTGljsqdjqAAzWsamzRNZ4V44zq3qPWUW7b4UhvV_tGCPwiqFC_ViUfGLXjlVXw3JyLY3chSW38dcw_KP5TbXqTyB1Xi2GLVtKbqg0bXeIMSJjl2wggLixIaxtGr3jnTN5pMs90yVan-YcrmtQeTtWF00za-KloKVjrgyw/s512/Las%20Mejores%20Tortillas%20(1).png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

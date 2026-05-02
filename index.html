@@ -1,141 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:version='2' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-
+<html lang="es">
 <head>
-<meta content='Las mejores tortillas de San José en Pavas. Gallos, pinto, tortillas palmeadas y más. Pedí fácil por WhatsApp.' name='description'/>  
-  
-<meta charset='UTF-8'/>
-<meta content='width=device-width, initial-scale=1' name='viewport'/>
-<title>Las Mejores🤍Tortillas de San José - Pavas</title>
 
-<b:skin><![CDATA[
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Las mejores tortillas de San José en Pavas. Gallos, pinto, tortillas palmeadas y más. Pedí fácil por WhatsApp.">
 
-.form-box{
-width:100%;
-display:flex;
-flex-direction:column;
-gap:10px;
-margin-top:15px;
-}
+<title>Las Mejores Tortillas de San José - Pavas</title>
 
-.form-box input{
-width:100%;
-padding:12px;
-border-radius:10px;
-border:1px solid #ccc;
-font-size:16px;
-box-sizing:border-box;
-}
-
-/* Efecto cuando el usuario escribe */
-.form-box input:focus{
-outline:none;
-border:2px solid #27ae60;
-}
-
-/* 📱 Mejora en móviles */
-@media (max-width:600px){
-
-.cart-box{
-width:100%;
-right:0;
-}
-
-
-
-.form-box input{
-font-size:18px;
-padding:16px;
-border-radius:12px;
-}
-
-}
-
-.btn{
-display:block;
-width:100%;
-text-align:center;
-background:linear-gradient(45deg,#27ae60,#2ecc71);
-color:white;
-padding:14px;
-margin-top:15px;
-border-radius:10px;
-text-decoration:none;
-font-weight:bold;
-font-size:18px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
-transition:all 0.3s ease;
-}
-
-/* Hover (cuando pasan el mouse) */
-.btn:hover{
-background:linear-gradient(45deg,#219150,#27ae60);
-transform:scale(1.05);
-box-shadow:0 6px 15px rgba(0,0,0,0.3);
-}
-
-/* Click efecto */
-.btn:active{
-transform:scale(0.97);
-box-shadow:0 2px 5px rgba(0,0,0,0.2);
-}
-
-
-
-.cart-box button{
-padding:5px 8px;
-margin:3px;
-border-radius:5px;
-border:none;
-background:#f90404;
-color:white;
-cursor:pointer;
-}
-
-.cart-box button:hover{
-opacity:0.8;
-}
-
-
-
-#main {
-display:none;
-}
-
-.details-btn{
-background:#27ae60;
-color:white;
-border:none;
-padding:8px;
-width:calc(100% - 20px);
-margin:10px;
-border-radius:5px;
-cursor:pointer;
-font-size:16px;
-}
-
-.details{
-max-height:0;
-overflow:hidden;
-transition:max-height 0.3s ease;
-background:#fff;
-padding:0 10px;
-color:#555;
-font-size:14px;
-}
-
-.card.open .details{
-max-height:120px;
-padding:10px;
-}
+<style>
 
 body{
 margin:0;
 font-family:Arial;
 background:#fffaf3;
-font-size:18px;
-line-height:1.5;
 }
 
 header{
@@ -147,8 +25,6 @@ color:white;
 
 .logo{
 max-width:250px;
-margin:auto;
-display:block;
 }
 
 .banner{
@@ -157,40 +33,14 @@ color:white;
 text-align:center;
 padding:12px;
 font-weight:bold;
-font-size:30px;
+font-size:22px;
 }
 
 .section{
-padding:35px;
+padding:20px;
 max-width:1100px;
 margin:auto;
-font-size:18px;
 }
-
-.carousel{position:relative;overflow:hidden;}
-.carousel-track{display:flex;transition:0.5s;}
-.carousel-slide{min-width:100%;}
-.carousel-slide img{
-width:100%;
-height:auto;
-max-height:700px;
-object-fit:cover;
-display:block;
-}
-
-.carousel-btn{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-background:#f90404;
-color:white;
-border:none;
-padding:10px;
-cursor:pointer;
-}
-
-.prev{left:10px;}
-.next{right:10px;}
 
 .menu{
 display:grid;
@@ -201,14 +51,19 @@ gap:20px;
 .card{
 background:white;
 border-radius:10px;
-overflow:hidden;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
-position:relative;
+overflow:hidden;
 }
 
-.card img{width:100%;height:170px;object-fit:cover;}
+.card img{
+width:100%;
+height:160px;
+object-fit:cover;
+}
 
-.card h3,.card p{margin:10px;}
+.card h3,.card p{
+margin:10px;
+}
 
 .card a{
 display:block;
@@ -221,25 +76,6 @@ border-radius:5px;
 text-decoration:none;
 }
 
-.badge{
-position:absolute;
-top:10px;
-left:10px;
-background:#f90404;
-color:white;
-padding:5px 10px;
-font-size:14px;
-border-radius:5px;
-}
-
-.review{
-background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
-text-align:center;
-}
-
 .cart-floating{
 position:fixed;
 bottom:80px;
@@ -249,670 +85,157 @@ color:white;
 padding:15px;
 border-radius:50px;
 cursor:pointer;
-z-index:999;
 }
 
 .cart-box{
 position:fixed;
 bottom:0;
 right:0;
-width:320px;
-max-height:70%;
+width:300px;
 background:white;
-overflow:auto;
 padding:15px;
 display:none;
-z-index:999;
-text-align:center;
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
+.btn{
+display:block;
+width:100%;
+background:#27ae60;
 color:white;
-padding:15px;
-border-radius:50%;
-font-size:20px;
-z-index:999;
-}
-
-footer{
+padding:12px;
 text-align:center;
-padding:20px;
-background:#222;
-color:#aaa;
+margin-top:10px;
+text-decoration:none;
+border-radius:5px;
 }
 
-]]></b:skin>
+</style>
 
 </head>
 
 <body>
 
-<b:section id='main' showaddelement='no'/>
-
 <header>
-<img class='logo' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghamwcVVX1zE1m37GyEg9CiUTGljsqdjqAAzWsamzRNZ4V44zq3qPWUW7b4UhvV_tGCPwiqFC_ViUfGLXjlVXw3JyLY3chSW38dcw_KP5TbXqTyB1Xi2GLVtKbqg0bXeIMSJjl2wggLixIaxtGr3jnTN5pMs90yVan-YcrmtQeTtWF00za-KloKVjrgyw/s750/Las%20Mejores%20Tortillas%20(1).png'/>
-<h2>Las Mejores🤍Tortillas de San José - Pavas🔥</h2>
+<img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghamwcVVX1zE1m37GyEg9CiUTGljsqdjqAAzWsamzRNZ4V44zq3qPWUW7b4UhvV_tGCPwiqFC_ViUfGLXjlVXw3JyLY3chSW38dcw_KP5TbXqTyB1Xi2GLVtKbqg0bXeIMSJjl2wggLixIaxtGr3jnTN5pMs90yVan-YcrmtQeTtWF00za-KloKVjrgyw/s750/Las%20Mejores%20Tortillas%20(1).png">
+<h2>Las Mejores Tortillas de San José</h2>
 </header>
 
-<div class='banner'>
-🚚 Envío GRATIS en Pavas para compras mayores a &#8353;10,000
+<div class="banner">
+🚚 Envío GRATIS en Pavas desde ₡10,000
 </div>
 
-<!-- CARRUSEL -->
-<div class='carousel'>
-<div class='carousel-track' id='track'>
+<div class="section">
+<h2>Menú</h2>
 
-<div class='carousel-slide'>
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyFgciXRv3UBhunZyZdpPoqOhEX5s7-UTRbKcyg_XCNhtnD_ySrVjUBOVZ7TRp4RPfm1zZZcgNpAd6pz-JT2R_6KrIgLokw2EbB-Qk_C17h_xq96NdMduvQt90zhlJ2XfH5juEbpuP5g23ee-Ws7xjxtkDj0EMI3GyeUG4giOHfoyXyYAz12EhhM7zk9Y/s1600/ordena%20el%20mejor%20chile%20%281%29.png'/>
-</div>
+<div class="menu">
 
-<div class='carousel-slide'>
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5CE2WRBFGaCDQKfF3FdqCUPB7p9YY-Cr1ql6_64USVH5ouWKWWcclI8LT4NSvOueCCTI64A6RI9m6nMPYus7cfZiqDtLi8dCv0YBF2GfECnDM3hDkMPWle6stxSXoZwcSAoVrit1UTUyY4d3xook2fv6g-mYnjkvg_8szUipvApo0gZgnad7xe3ddSik/s1600/ordena%20el%20mejor%20chile%20%282%29.png'/>
-</div>
-  
-  <div class='carousel-slide'>
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGwn72BAKowgBIt5_kr3OsAozEGdFMJ533S85m1WvZl1f5pg3W9HO6GfkBtBj7hLOkxeYoRSrtuMoNj3wjzovsJxlaiGpu6OnnE7Y29MMI8G7KBcZ8WoIFGaT3Ukiy_LcER8gYx8ouNiAERKOq-1M-_aE8qRkv52_-AY0Leeq43_IvP8uVHvmLIwYFoSY/s1600/ordena%20el%20mejor%20chile%20%286%29.png'/>
-</div>
-
-<div class='carousel-slide'>
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqmEqSnAov0p9vhf52HSTrgQzeTuPWhaEghupspzgdj9PvrAfm9j_yAdM5SDmwUZqpwoWbOSYdh5BNSvBP49_DAcnNjrJkR7wlYJwM9Gv2ribCT4qkCtsItw2fcC3B9_RX65ZTqkzaHZATDO5asail7ATVw3zDcu41CuBN4h9BfDQSaWcmUrNJE4BMFdA/s1600/ordena%20el%20mejor%20chile%20%284%29.png%22%20style=%22display:%20block;%20padding:%201em%200;%20text-align:%20center;%20%22%3E%3Ci'/>
-</div>
-
-</div>
-
-<button class='carousel-btn prev' onclick='move(-1)'>&#10094;</button>
-<button class='carousel-btn next' onclick='move(1)'>&#10095;</button>
-</div>
-
-<!-- HORARIO -->
-<div class='section' id='horarioBox' style='text-align:center;'>
-<h2>🕒 Horario</h2>
-<div id='estadoHorario' style='padding:12px;border-radius:8px;color:white;font-weight:bold;'>
-Cargando...
-</div>
-<p>Lunes - Viernes: 6:00am - 7:00pm | Sábados - Domingos: 7:00am - 7:00pm</p>
-</div>
-
-<!-- MENÚ -->
-<div class='section'>
-
-<div class='menu'>
-  
-<!-- COMBOS INTELIGENTES -->
-
-<div style='grid-column: 1/-1;'>
-  
-  
-<h2 style='margin:15px 0;'>🔥 Échale un ojo a nuestro menú online</h2>  
-</div>
-
-<!-- COMBO 1 -->
-<div class='card'>
-<div class='badge'>💑 FAVORITO</div>
-
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrruthB0M9J8_kv3KbYcdflu9LsgEQEysNh505cscRwaopgFMxuZcBN4wYT5VNeOHErNobkT6Px_CUCOLhvCCUT0TuR44LvjeiYsTPolRnxTg7SM9TLF_X9h3yombp5TEkhVJ9QBXuoe8i7ey09TjY2y9U2u1UgoUQW4p9a367XVWxo4pFjhuR8VGGUb4/s1600/Copia%20de%204%20super%20gallos.png'/>
-
+<div class="card">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrruthB0M9J8_kv3KbYcdflu9LsgEQEysNh505cscRwaopgFMxuZcBN4wYT5VNeOHErNobkT6Px_CUCOLhvCCUT0TuR44LvjeiYsTPolRnxTg7SM9TLF_X9h3yombp5TEkhVJ9QBXuoe8i7ey09TjY2y9U2u1UgoUQW4p9a367XVWxo4pFjhuR8VGGUb4/s1600/Copia%20de%204%20super%20gallos.png">
 <h3>Combo Hambre</h3>
-<p>&#8353;7000</p>
-
-<p style='color:#27ae60;font-weight:bold;'>
-🔥 Ahorrás &#8353;1000
-</p>
-
-<button class='details-btn'>Ver detalles 👇</button>
-
-<div class='details'>
-
-  <li> Esto sí llena&#8230; y vale cada colón 😮&#8205;🔥</li>
-  
-
- <li>&#10004;&#65039; 4 ticas grandes con frijol, queso y cerdo</li>
- <li> 🥤 4 bebidas a elegir</li>
-
-  <li> 💰 Antes: &#8353;8.000</li>
-  <li> 💥 HOY: &#8353;7.000</li>
-
-  <li> 👨&#8205;👩&#8205;👧&#8205;👦 Perfecto para compartir</li>
-  <li> 🔥 Bien cargadas y recién hechas</li>
-  
+<p>₡7000</p>
+<a href="#" class="add" data-n="Combo Hambre" data-p="7000">Agregar</a>
 </div>
 
-<a class='add' data-n='Combo Hambre' data-p='7000' href='#'>
-Agregar
-</a>
-</div>
-
-<!-- COMBO 2 -->
-<div class='card'>
-<div class='badge'>👨&#8205;👩&#8205;👧&#8205;👦 FAMILIAR</div>
-
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNNeHuwoULNE26Iw9YDOfIoiqsSP8JalyI8msxnYylLjgf33UbyM5x0_mbGaKq5DzK0juBZMEHHS2qU1fI_99ioLNpgd375W1-nbt_iYdFEq6Epo4YdNGQZ04_QmGKtnB2z1rC5LxGd8D3IddK24scIMa8oJW7VJxWd-gWbWoFtj1upYvuhAVKpGRW3LM/s1600/4%20super%20gallos%20%2812%29.png'/>
-
-<h3>Combo Familiar</h3>
-<p>&#8353;9900</p>
-
-<p style='color:#27ae60;font-weight:bold;'>
-🎁 Envio GRATIS y -%10
-</p>
-
-<button class='details-btn'>Ver detalles 👇</button>
-
-<div class='details'>
-  
-<li>🧀 5 tortillas extra queso  </li>
-  
-<li>🫓 2 prensadas de queso</li>
-  
-<li>🥤 4 jugos (naranja o té)</li>
-  
-<li>💰 Precio normal: &#8353;11.100</li>
-<li>📲 Precio app: &#8353;9.900</li>
-  
-<li>💥 Ahorrás &#8353;1.200 + envío GRATIS en Pavas 💥</li>
-  
-</div>
-
-
-
-<a class='add' data-n='Combo Familiar' data-p='9900' href='#'>
-Agregar
-</a>
-</div>
-
-<!-- COMBO 3 -->
-<div class='card'>
-<div class='badge'>&#9889; RÁPIDO</div>
-
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_LmRB3GipjE9dR-DSzHeOaSI1lWrmhO4TzChKs9_WRfeq1_s8773xkfgQdA7YSTl1mw9RJy-JcmwB-SrbbkMx64T7SoOutVxqTyUBAMojqkmK49MGHL2kDTUJmu9NvfV1nHKHUv8cjZvmozDYgrldoPRJ5ww_SsVjmZJjO_Yu_JgGLScIqmQvw9ZccG4/s1600/4%20super%20gallos%20%2813%29.png'/>
-
-<h3>Combo Desayu para2</h3>
-<p>&#8353;6000</p>
-
-<p style='color:#27ae60;font-weight:bold;'>
-&#9889; Listo en minutos
-</p>
-
-<button class='details-btn'>Ver detalles 👇</button>
-
-<div class='details'>
-  
-
-  
-<li>  &#10004;&#65039; 2 desayunos especiales </li>
-  
-<li>&#10004;&#65039; 2 natillas personales</li>
-  
-<li>🥤 2 jugos (naranja o té)</li>
-  
-<li>💰 Precio normal: &#8353;7.000</li>
-<li>📲 Precio app: &#8353;6.000</li>
-  
-<li>💥 🚚 Envío disponible💥</li>
-</div>
-
-<a class='add' data-n='Combo Desayu para2' data-p='6000' href='#'>
-Agregar
-</a>
-</div>  
-  
-<div class='card'>
-<div class='badge'>👨&#8205;👩&#8205; APASIONADOS</div>
-
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh01qpX6nebHLpIKIT8DjMjYt_ZbCHGgHVKjqg2IWi0OL1kaCk7fIRolKm65m3qcRUaE_tzA75cCjqJqYMOHjqrf8q4cREl62Z9RKsHwnhWNHY1g5-Zf_S-340nynJfAMjhPli275-VKypnfs5J3-fi9IUXQak_qtmY_TSSSZV4n03LzEQOcPBw1szRLcA/s1600/Copia%20de%204%20super%20gallos%20%281%29.png'/>
-
-<h3>Combo Best Friends</h3>
-<p>&#8353;4000</p>
-
-<p style='color:#27ae60;font-weight:bold;'>
-🎁 Natilla de regalo
-</p>
-
-<button class='details-btn'>Ver detalles 👇</button>
-
-<div class='details'>
-  
-    
-  <li>&#10004;&#65039; 4 prensadas de queso FULL derretido</li>
-  <li>🥤 Coca Cola 600ml para compartir</li>
-  <li>🥣 Natilla casera</li>
-
-  <li>💰 Antes: &#8353;4.700</li>
-  <li>💥 HOY: &#8353;4.000</li>
-
-  <li>🔥 Calientitas y recién hechas</li>
-  <li>🚚 Listo para enviarte</li>
-  
-</div>
-
-<a class='add' data-n='Combo Best Friends' data-p='4000' href='#'>
-Agregar
-</a>
-</div>
-
-<!-- DESTACADO -->  
-   
-<div class='card'>
-
-<div class='badge'>🔥 MÁS VENDIDO</div>
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdgh3bJvLMKh2OQX0_QRcswXOjc9CEnlXkR9HbyFitn2D9wR6akXDDKnE6il5IayGywvw2tCrmo2uthbO-kBhyphenhyphenFWSk4tX8_YnJibju2a9vyIrcjVzZB14ibt8guHgcmntr1dKyuTpv3Sx8bdApOv2J8L_mgSbT17gHytcuEZ1MkkOK9nx_JBOEXiPtUkg/s1600/WhatsApp%20Image%202026-02-12%20at%203.25.31%20PM.jpeg'/>
-<h3>Gallos las cubanitas</h3>
-<p>&#8353;4000</p>
-<button class='details-btn'>Ver detalles 👇</button>
-<div class='details'>
-2 tortillas grandes, rellenas de carne molida cocida con vegetales y delicioso queso derretido. Vienen con el rico chile de la casa y crema de ajo. 
-</div>
-
-<a class='add' data-n='Gallos las cubanitas' data-p='4000' href='#'>Agregar</a>
-
-</div>
-  
-  
-
-<!-- Producto 1 -->
-<div class='card'>
-
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz4t_OVfEjW1N-BVrYHcEbI3L_UJzwfdbQgI4L6INugfU4eNxkjGX2fLBjckZZK5Wl_JY9C7rnVjM8JeJ_nbZvoldWa1pPmzBN6ZnWvH0L6e51fcoJ2rzm1RyhQfGe4DwxTXvucxKnYcLcecZy-v92RD30jhPeUecrx2DOlVMgfsq8ogTMh3CcgYyWVvU/s1600/pintoespecial.jpeg'/>
-
+<div class="card">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz4t_OVfEjW1N-BVrYHcEbI3L_UJzwfdbQgI4L6INugfU4eNxkjGX2fLBjckZZK5Wl_JY9C7rnVjM8JeJ_nbZvoldWa1pPmzBN6ZnWvH0L6e51fcoJ2rzm1RyhQfGe4DwxTXvucxKnYcLcecZy-v92RD30jhPeUecrx2DOlVMgfsq8ogTMh3CcgYyWVvU/s1600/pintoespecial.jpeg">
 <h3>Pinto especial</h3>
-<p>&#8353;2000</p>
-
-<button class='details-btn'>Ver detalles 👇</button>
-
-<div class='details'>
-Arroz con frijoles, huevo, plátano maduro, tortilla y salchichón.
+<p>₡2000</p>
+<a href="#" class="add" data-n="Pinto especial" data-p="2000">Agregar</a>
 </div>
 
-<a class='add' data-n='Pinto especial' data-p='2000' href='#'>Agregar</a>
-
 </div>
-  
-  
-  <!-- PRODUCTO 2 -->
-  
-  <div class='card'>
-
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiF_yJscy6JA76ka_FnYsbGmCcJa09xD51bhRcTODA7qclvsVsmeIJzFHZzSkNaDPqDw7lasqrV-jIjk9rdu5BBNk8LltcqLNtv-D1AI4Wbve3eP142YaXVyNuSndARn-AkiEhr2_u-xUN3AkwZ460io1cQO4NjXjJPODgj9ifvxzHQUYQNi0arHj5Hv-4/s1600/WhatsApp%20Image%202026-02-05%20at%207.52.50%20AM%20%281%29.jpeg'/>
-
-<h3>Combo Enamorados</h3>
-<p>&#8353;5300</p>
-
-<button class='details-btn'>Ver detalles 👇</button>
-
-<div class='details'>
-4 tortillas grandes, rellenas de frijol molido rojo y queso que se derrite en tu boca. Lleva dos Coca Colas bien frias.
-</div>
-
-<a class='add' data-n='Combo Enamorados' data-p='5300' href='#'>Agregar</a>
-
-</div>
-  
-  
-    <!-- PRODUCTO 3 -->
-  <div class='card'>
-
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghfdVLf00BDeufDb_sQuIPD3gkOFSt3dfrovqbIAnSPA7Xt2bwRl3DRj6SBqej8dUAW-yzbGWdLadIe1nxxCSvkDCsgE7Md30RFqhYtBWlfHRqHN5JYEUyetXv69bc9V6Jgmt7oefdH603QS18N3qXHtgRi0gKls-z4DpMtvEQw8L4YsX20e7LGT8ZWDc/s1600/Copia%20de%2020%20%2829%29.png'/>
-
-<h3>Paquete de 25 tortillas</h3>
-<p>&#8353;2500</p>
-
-<button class='details-btn'>Ver detalles 👇</button>
-
-<div class='details'>
-Paquete de 25 tortillas palmeadas regulares. Deliciosas para compartir el café con tus seres queridos. 
-</div>
-
-<a class='add' data-n='Paquete de 25 tortillas' data-p='2500' href='#'>Agregar</a>
-
-</div>
-  
-  
-   <!-- PRODUCTO 4 -->
-  
-   <div class='card'>
-
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjihgtDFlya4cXDYQ0__R-yUX9_7y6HI8_ZSuK8ix5RAlwKIR6vNS7kn3-lBOufFpB1Rwb_zQDN_SBZNrj32UGfqOl22x9lzBQmBM2VVYWsRnOZT6oUfc5qFPuLDHyiwdggnB2yVRpS3L_J6TWIYgbUnl024PfHsB1VuWRKMZBPr8mMlvTuB2Ev6LV1Q10/s1600/Copia%20de%2020%20%2835%29.png'/>
-
-<h3>Gallo grande LA TICA</h3>
-<p>&#8353;1500</p>
-
-<button class='details-btn'>Ver detalles 👇</button>
-
-<div class='details'>
-Tortilla grande prensada, rellena de frijol molido rojo, queso derretido y chicharrón carnoso. 
-</div>
-
-<a class='add' data-n='Gallo grande LA TICA' data-p='1500' href='#'>Agregar</a>
-
-</div>
-
-
-   <!-- PRODUCTO 5 -->
-  
-   <div class='card'>
-
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2IyCv7WOm0pSbYZBTe-ZahkGlSQLJn-Lg32yhyphenhyphenLMV3uIbMFP8X470Byx9_Vvy7pa04qeIXak1jRY90Hf_M1Pd2XoYgMk3E4C4HMnXjO_SL-pXlCSRU0ilwYedr2mRATmC6S1gwcYAhXedK3WRxI7CMjHh_pWGHbPRlQ7HzKpd3rzBsaNHhcP3JIP49to/s1600/Come%20como%20los%20reyes%20con%20nuestra%20TortiPinto.png'/>
-
-<h3>Tortipinto</h3>
-<p>&#8353;2800</p>
-
-<button class='details-btn'>Ver detalles 👇</button>
-
-<div class='details'>
-Deliciosa tortilla de queso revuelta, con rico pinto, salchichón, queso y natilla. 
-</div>
-
-<a class='add' data-n='Tortipinto' data-p='2800' href='#'>Agregar</a>
-
-</div>
-  
-  
-     <!-- PRODUCTO 5 -->
-  
-   <div class='card'>
-
-<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8kP-fR5CC8SR7YqUpnRWOLf6xZp1Q3qbF103t3_xXgz2-A6EM9NNHeUwrotSS2ycHqLbxkisxxk_NfUYefbH7FpkvZaawbf3UvXZuVeuzoNirRyfqKN5F69KMt0Y55mGi6JqBWiV3neXDl92s8rSliednjNIasnzXPsr-mfsyMWWOzCd_1XcnKxvpZvg/s1600/4%20super%20gallos%20%2811%29.png'/>
-
-<h3>Saca de arroz 6kg</h3>
-<p>&#8353;4200</p>
-
-<button class='details-btn'>Ver detalles 👇</button>
-
-<div class='details'>
-Arroz premiun, al 99%. Insumo de calidad que se usa en nuestros platillos. 
-</div>
-
-<a class='add' data-n='Saca de arroz 6kg' data-p='4200' href='#'>Agregar</a>
-
-</div>  
-  
-     <!-- PRODUCTO 6 -->
-  
-   <div class='card'>
-
-<img src=' https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK9ato_E46LPC9UcznqVaQFlGQdbMbt_2fL1LDKQLlWgSbx-7RfLKldMsH3z8Atzwlc9ndHZjhKphJJxGSnDLWP0c5jIaBGItwcVKQSYdUxv48FmoVEHiTXHxCHypGV_QnvDa1oa1rmysGe1fAbE_rcsrEtFFDl4ZxdXKC7sT4xMjxx8DfX9rr4Rvgyw8/s1600/4%20super%20gallos%20%2810%29.png'/>
-
-<h3>Saco del comal extra</h3>
-<p>&#8353;13000</p>
-
-<button class='details-btn'>Ver detalles 👇</button>
-
-<div class='details'>
-El secreto mejor guardado de nuestras deliciosas tortillas. 20 kg de puro sabor en masa extra suave.  
-</div>
-
-<a class='add' data-n='Saco del comal extra' data-p='13000' href='#'>Agregar</a>
-     
-     
-     
-
-</div>
-  
- 
-  
-  
-
-</div>
-</div>
-
-<!-- REVIEWS -->
-<div class='section'>
-<h2>&#11088; Lo que dicen nuestros clientes </h2>
-<div class='menu'>
-<div class='review'>&#11088;&#11088;&#11088;&#11088;&#11088; Excelente sabor, muy novedosos productos. Me encanta como realzan el sabor de nuestros gallos ticos. Pura vida. <strong>Lisa</strong></div>
-<div class='review'>&#11088;&#11088;&#11088;&#11088;&#11088; Las mejores tortillas en San José sin duda. Todo súper fresco, el gallo pinto delicioso y todo muy limpio, este lugar es fijo. <strong>Michael</strong></div>
-<div class='review'>&#11088;&#11088;&#11088;&#11088;&#11088; Las tortillas de queso aquí son otro nivel. Súper frescas, suaves por dentro. Sin duda de las mejores que he probado. <strong>Margaret</strong></div>
-  
-  <!-- 👉 AQUÍ PEGAS EL BOTÓN DE GOOGLE -->
-<div class='section' style='text-align:center;'>
-
-<h2>&#11088; Opiniones en Google</h2>
-
-<p>&#191;Te gustó nuestro servicio? Dejanos tu opinión.</p>
-
-<a href='https://g.page/r/CU5P73QuZ3YyEAE/review' style='background:#f90404;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;' target='_blank'>
- Dejar reseña
-</a>
-
-</div>
-  
-</div>
-</div>
-
-<!-- MAPA -->
-<div class='section'>
-<h2>📍 Llegar a nuestra ubicación es muy fácil</h2>
-
-<iframe height='350' loading='lazy' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.9188898097932!2d-84.13422094218902!3d9.947451747643525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fbc25e6ab0fb%3A0x3276672e74ef4f4e!2sLas%20mejores%20tortillas%20de%20San%20Jos%C3%A9%20-%20Pavas%20%7C%20Empanadas%20-%20Tortillas%20-%20Gallos%20-%20Prensadas%20y%20m%C3%A1s!5e0!3m2!1ses-419!2scr!4v1777072343950!5m2!1ses-419!2scr' style='border:0;' width='100%'/>
-
 </div>
 
 <!-- CARRITO -->
-<div class='cart-floating' onclick='toggleCart()'>🛒 <span id='count'>0</span></div>
+<div class="cart-floating" onclick="toggleCart()">🛒 <span id="count">0</span></div>
 
-<div class='cart-box' id='cartBox' style='position:fixed;'>
-
-<!-- BOTONES SUPERIORES -->
-<div style='display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;'>
-
-<button onclick='vaciarCarrito()' style='background:#ccc;color:#333;border:none;padding:6px 10px;border-radius:6px;cursor:pointer;'>
-🗑 Vaciar
-</button>
-
-<button onclick='toggleCart()' style='background:#f90404;color:white;border:none;padding:6px 10px;border-radius:6px;cursor:pointer;'>
-&#10006; Cerrar
-</button>
-
-</div>
-  
-  
-  
-  
-  
-  
-  
+<div class="cart-box" id="cartBox">
 <h3>Pedido</h3>
-<div id='cart'/>
-<h3>Total &#8353;<span id='total'>0</span></h3>
- 
-  
-  
-  
-<div class='form-box'>
+<div id="cart"></div>
+<h3>Total ₡<span id="total">0</span></h3>
 
-<input id='nombreCliente' placeholder='Tu nombre' type='text'/>
+<input id="nombre" placeholder="Tu nombre">
+<input id="correo" placeholder="Correo">
 
-
-<input id='correoCliente' pattern='^[^@\s]+@[^@\s]+\.[^@\s]+$' placeholder='Tu correo electrónico' required='required' title='Ingresá un correo válido (ejemplo: nombre@gmail.com)' type='email'/>
-  
+<a class="btn" href="#" onclick="enviarPedido()">Pedir por WhatsApp</a>
 </div>
-  
-  
-  
-  
-  
-  
-<a class='btn' href='#' onclick='enviarPedido()'>Hacer pedido</a>
-</div>
-
-<a class='whatsapp' href='https://wa.me/50670961571' target='_blank'>💬</a>
-
-<footer>&#169; Todos los derechos reservados - ToGo Restaurant - Darowo Agency</footer>
 
 <script>
-  
-  function vaciarCarrito(){
-if(confirm(&quot;Querés vaciar el carrito?&quot;)){
-carrito = [];
-render();
-}
-}
-  
-  
-function generarID(){
-var fecha = new Date();
-
-var id = &quot;PED-&quot; +
-fecha.getFullYear() +
-(fecha.getMonth()+1).toString().padStart(2,&#39;0&#39;) +
-fecha.getDate().toString().padStart(2,&#39;0&#39;) + &quot;-&quot; +
-Math.floor(Math.random()*10000);
-
-return id;
-}  
-  
-  
-//<![CDATA[
 
 var carrito=[];
 
-document.addEventListener('click',function(e){
-if(e.target.className.indexOf('add')!==-1){
+document.addEventListener("click",function(e){
+if(e.target.classList.contains("add")){
 e.preventDefault();
+
 var n=e.target.dataset.n;
 var p=parseInt(e.target.dataset.p);
 
-var existe=false;
+var existe=carrito.find(x=>x.nombre===n);
 
-for(var i=0;i<carrito.length;i++){
-if(carrito[i].nombre==n){carrito[i].cantidad++;existe=true;}
+if(existe){
+existe.cantidad++;
+}else{
+carrito.push({nombre:n,precio:p,cantidad:1});
 }
-
-if(!existe){carrito.push({nombre:n,precio:p,cantidad:1});}
 
 render();
 }
 });
 
-
-
-
-
 function render(){
-var h=0,c=0,html="";
+var total=0;
+var count=0;
+var html="";
 
-for(var i=0;i<carrito.length;i++){
-h+=carrito[i].precio*carrito[i].cantidad;
-c+=carrito[i].cantidad;
+carrito.forEach((p,i)=>{
+total+=p.precio*p.cantidad;
+count+=p.cantidad;
 
-html += `
-<div style="border-bottom:1px solid #eee;padding:8px 0;">
-<strong>${carrito[i].nombre}</strong><br/>
-
-<button onclick="cambiarCantidad(${i},-1)">➖</button>
-<span style="margin:0 10px;">${carrito[i].cantidad}</span>
-<button onclick="cambiarCantidad(${i},1)">➕</button>
-
-<br/>₡${carrito[i].precio * carrito[i].cantidad}
-
-<br/>
-<button onclick="eliminarProducto(${i})" style="color:red;border:none;background:none;cursor:pointer;">
-❌ Eliminar
-</button>
+html+=`
+<div>
+${p.nombre} x${p.cantidad} ₡${p.precio*p.cantidad}
+<button onclick="eliminar(${i})">❌</button>
 </div>
 `;
+});
+
+document.getElementById("cart").innerHTML=html;
+document.getElementById("total").innerText=total;
+document.getElementById("count").innerText=count;
 }
 
-document.getElementById('cart').innerHTML=html;
-document.getElementById('total').innerHTML=h;
-document.getElementById('count').innerHTML=c;
-}
-
-
-function cambiarCantidad(index, cambio){
-carrito[index].cantidad += cambio;
-
-if(carrito[index].cantidad <= 0){
-carrito.splice(index,1);
-}
-
-render();
-}
-
-function eliminarProducto(index){
-carrito.splice(index,1);
+function eliminar(i){
+carrito.splice(i,1);
 render();
 }
 
 function toggleCart(){
-var b=document.getElementById('cartBox');
-b.style.display=b.style.display=='block'?'none':'block';
+var c=document.getElementById("cartBox");
+c.style.display=c.style.display==="block"?"none":"block";
 }
-
-
-
 
 function enviarPedido(){
 
-var pedidoID = generarID();
+var nombre=document.getElementById("nombre").value;
+var correo=document.getElementById("correo").value;
 
-var nombre = document.getElementById('nombreCliente').value.trim();
-var correo = document.getElementById('correoCliente').value.trim();
-
-if(nombre === "" || correo === ""){
-alert("Por favor completá tu nombre y correo");
+if(!nombre || !correo){
+alert("Completá tus datos");
 return;
 }
 
+var msg="Pedido:%0A";
 
-
-
-
-
-var msg='🧾 Pedido #' + pedidoID + '%0A%0A';
-msg+='Cliente: '+nombre+'%0A';
-msg+='Correo: '+correo+'%0A%0A';
-
-for(var i=0;i<carrito.length;i++){
-msg+='- '+carrito[i].nombre+' x'+carrito[i].cantidad+' ₡'+(carrito[i].precio*carrito[i].cantidad)+'%0A';
-}
-
-msg+='Total ₡'+document.getElementById('total').innerHTML;
-msg+='%0A%0AGracias por comprar en Las Mejores Tortillas 🤍';
-
-window.open('https://wa.me/50670961571?text='+msg);
-}
-
-
-
-
-
-var i=0;
-function move(s){
-var t=document.getElementById('track');
-var sld=document.getElementsByClassName('carousel-slide');
-i+=s;
-if(i<0)i=sld.length-1;
-if(i>=sld.length)i=0;
-t.style.transform='translateX('+(-i*100)+'%)';
-}
-if(window.innerWidth > 600){
-setInterval(function(){move(1);},4000);
-}
-
-function horario(){
-var d=new Date(),h=d.getHours()+d.getMinutes()/60,ok=false;
-if(d.getDay()<=5){ok=h>=6&&h<19;}else{ok=h>=7&&h<19;}
-var e=document.getElementById('estadoHorario');
-e.innerHTML=ok?'🟢 Abierto':'🔴 Cerrado';
-e.style.background=ok?'#27ae60':'#ff0000';
-}
-horario();
-
-//]]>
-  
-  
-  // DESPLEGABLE DESCRIPCIÓN
-document.addEventListener(&#39;click&#39;, function(e){
-if(e.target.classList.contains(&#39;details-btn&#39;)){
-var card = e.target.parentElement;
-card.classList.toggle(&#39;open&#39;);
-}
+carrito.forEach(p=>{
+msg+=p.nombre+" x"+p.cantidad+" ₡"+(p.precio*p.cantidad)+"%0A";
 });
-  
+
+msg+="Total ₡"+document.getElementById("total").innerText;
+
+window.open("https://wa.me/50670961571?text="+msg);
+}
+
 </script>
 
 </body>
